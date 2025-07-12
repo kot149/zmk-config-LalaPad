@@ -4,18 +4,23 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: ShiniNet
       url-base: https://github.com/ShiniNet/
-    - name: caksoylar 
-      url-base: https://github.com/caksoylar  
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
+    # https://github.com/zmkfirmware/zmk
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    # https://github.com/ShiniNet/cirque-input-module
     - name: cirque-input-module
       remote: ShiniNet
       revision: main
+      path: modules/cirque-input-module-shininet
+    # https://github.com/caksoylar/zmk-rgbled-widget
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+      path: modules/zmk-rgbled-widget
   self:
     path: config
