@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/ShiniNet/
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: badjeff
+      url-base: https://github.com/badjeff
     - name: ssbb
       url-base: https://github.com/ssbb
     - name: kot149
@@ -31,6 +33,11 @@ manifest:
       remote: caksoylar
       revision: main
       path: modules/zmk-rgbled-widget
+    # https://github.com/badjeff/zmk-input-processor-report-rate-limit
+    - name: zmk-input-processor-report-rate-limit
+      remote: badjeff
+      revision: main
+      path: modules/zmk-input-processor-report-rate-limit
     # https://github.com/kot149/zmk-mouse-gesture
     - name: zmk-mouse-gesture
       remote: kot149
