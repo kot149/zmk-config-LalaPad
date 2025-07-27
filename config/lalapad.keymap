@@ -7,7 +7,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors/rgbled_widget.dtsi>
 #include <input/processors/report_rate_limit.dtsi>
-#include <input/processors/sensor_rotation.dtsi>
+// #include <input/processors/sensor_rotation.dtsi>
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -128,9 +128,9 @@
     // };
 };
 
-&sensor_rotation {
-    rotation-angle = <30>;
-};
+// &sensor_rotation {
+//     rotation-angle = <30>;
+// };
 
 // cirque trackpad input&layer control
 
@@ -138,7 +138,7 @@
     input-processors =
         <&zip_report_rate_limit 15>,
         <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
-        <&sensor_rotation>,
+        // <&sensor_rotation>,
         <&zip_xy_scaler 4 1>,
         <&zip_mouse_gesture>,
         <&zip_temp_layer MOUSE 10000>;
