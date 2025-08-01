@@ -74,12 +74,12 @@
     enable-eager-mode;
 
     history_back {
-        pattern = <GESTURE_UP GESTURE_RIGHT>;
+        pattern = <GESTURE_RIGHT>;
         bindings = <&kp LA(LEFT)>;
     };
 
     history_forward {
-        pattern = <GESTURE_UP GESTURE_LEFT>;
+        pattern = <GESTURE_LEFT>;
         bindings = <&kp LA(RIGHT)>;
     };
 
